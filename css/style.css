@@ -1,0 +1,66 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(98, 151, 174);
+}
+body div{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: blue;
+}
+.calcolo{
+    width: auto;
+    margin: auto;
+    display: inline-flexbox;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    gap:7px;
+}
+
+div .calcolo input#risultato{
+    border: 2px black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: rgb(148, 247, 214);
+}
+input{
+    font-size: larger;
+}
+ input .numero{
+     border-radius: 5px;
+     background-color: rgb(127, 255, 148);
+ }
+ input .operatore{
+     border-radius: 5px;
+     background-color: rgb(90, 255, 101);
+     font-weight: bolder;
+ }
+
+/* .content {
+    margin-left: 2px;
+}
+.tasto {
+    background-color: #a5cff3 ;
+    color: #175c97;
+    font-size: 22pt;
+    border: none;
+    margin: 4px 2px;
+    height: 40px;
+width: 46px;
+}
+.display {
+    background: none;
+    color: #175c97;
+    font-size: 24pt;
+    border: #175c97 solid 2px;
+    margin: 4px 2px;
+    width: 204px;
+    height: 40px;            
+}
+.uguale {
+    width: 208px;
+}*/
