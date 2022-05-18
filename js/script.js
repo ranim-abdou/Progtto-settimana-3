@@ -1,8 +1,6 @@
-function display(numeber){
-    document.getElementById('risultato').value += Number;
-}
 
-/*function risultato(){
+
+function risultato(){
     let res_str = document.getElementById('risultato').value;
     let res_arr;
     if(res_str.indexOf('+')>-1){
@@ -33,15 +31,52 @@ function display(numeber){
 
 function reset(){
     document.getElementById('risultato').value = '';
-}*/
+}
 
-function operazione() { 
-    document.getElementById("operazioni").value=eval(document.getElementById("operazioni").value); 
-    }
-    
-    function reset() { 
-     document.getElementById("operazioni").value=""; 
-    }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
