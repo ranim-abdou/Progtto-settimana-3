@@ -11,45 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
 <body>
     
-        <input class="area" name="monitor" value="" placeholder="0">
-        <input name="last" type="hidden" value="">
-        <input name="oper" type="hidden" value="">
-        <input name="res" type="hidden" value="">
-        <table id="calc">
-          <tr>
-        <td><input type="button" value="C"  onclick="del();"></td>
-        <td><input type="button" value="◄" onclick="cancella();"></td>
-        <td><input type="button" value="%" onclick="perc();"></td>
-        <td><input type="button" value="&divide;"  onclick="ar('/');"></td>
-          </tr>   
-          <tr>
-        <td><input type="button" value="7" onclick="digit(7);"></td>
-        <td><input type="button" value="8" onclick="digit(8);"></td>
-        <td><input type="button" value="9" onclick="digit(9);"></td>
-        <td><input type="button" value="x" onclick="ar('*');"></td>
-          </tr>  
-          <tr>
-        <td><input type="button" value="4" onclick="digit(4);"></td>
-        <td><input type="button" value="5" onclick="digit(5);"></td>
-        <td><input type="button" value="6" onclick="digit(6);"></td>
-        <td><input type="button" value="-" onclick="ar('-');"></td>
-          </tr>  
-          <tr>
-        <td><input type="button" value="1" onclick="digit(1);"></td>
-        <td><input type="button" value="2" onclick="digit(2);"></td>
-        <td><input type="button" value="3" onclick="digit(3);"></td>
-        <td><input type="button" value="+" onclick="ar('+');"></td>
-          </tr>  
-          <tr>
-        <td><input type="button" value="0" onclick="digit(0);" ></td>
-        <td><input type="button" value="00" onclick="digit('00');"></td>
-        <td><input type="button" value=","onclick="digit('.');"></td>
-        <td><input type="button" value="=" onclick="result();"></td>
-          </tr>  
-        </table>
-    
-     </div>
-    
+  <div class="calcolatrice">
+    <input type="text" id="result">
+    <input type="button" value="7" class="num" onclick="display('7')"></input>
+    <input type="button" value="8" class="num" onclick="display('8')"></input>
+    <input type="button" value="9" class="num" onclick="display('9')"></input>
+    <input type="button" value=":" class="op" onclick="display(':')"></input>
+    <input type="button" value="4" class="num" onclick="display('4')"></input>
+    <input type="button" value="5" class="num" onclick="display('5')"></input>
+    <input type="button" value="6" class="num" onclick="display('6')"></input>
+    <input type="button" value="X" class="op" onclick="display('*')"></input>
+    <input type="button" value="1" class="num" onclick="display('1')"></input>
+    <input type="button" value="2" class="num" onclick="display('2')"></input>
+    <input type="button" value="3" class="num" onclick="display('3')"></input>
+    <input type="button" value="-" class="op" onclick="display('-')"></input>
+    <input type="button" value="C" class="reset" onclick="reset()"></input>
+    <input type="button" value="0" class="num" onclick="display('0')"></input>
+    <input type="button" value="." class="num" onclick="display('.')"></input>
+    <input type="button" value="+" class="op" onclick="display('+')"></input>
+    <input type="button" value= "=" class="equal" onclick="risultato()"></input>
+</div>
+</div>
     
     
             

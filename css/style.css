@@ -4,13 +4,18 @@ body{
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     background-color: rgb(128, 255, 212);
+    box-sizing: border-box;
 }
 .calcolatrice{
    margin: 30px auto;
     width: 340px;
     height: 600px;
     border-radius: 20px;
-    float: right;
+    width: auto;
+    display: inline-grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    gap: 5px;
     
 }
 #calc input {
@@ -27,4 +32,62 @@ body{
     text-align:right;
     font-size:20px
   }
+  
+
+body div{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(236, 225, 225);
+}
+
+div.calcolatrice input#result{
+    border: 1px solid rgb(92, 82, 82);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom: 10px;
+    background-color: rgb(150, 203, 203);
+    border-radius: 4px;
+}
+input{
+    font-size: large;
+}
+input.num{
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+}
+input.op{
+    border-radius: 4px;
+    background-color: rgb(165, 138, 138);
+    font-weight: bold;
+}
+input.equal{
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+input.reset{
+    border-radius: 4px;
+    background-color: rgb(197, 178, 178);
+}
+
+input.equal{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+input:hover{
+    filter: brightness(50%);
+}
+input:active{
+    font-size: small;
+}
+
+input#result:hover{
+    filter: none;
+}
+
+input#result:active{
+   font-size: large;
+}
 
